@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    
+    <div class="col-4  m-auto  p-5   shadow">
+
+    <form action="">
+        <div class="mb-3 mt-3  container" >
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3  container">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3  container">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+        <button type="submit" id="submit"  class="btn btn-primary">Submit</button>
+        <button type="reset"  id="reset"   class="btn btn-primary">Reset</button>
+      </form>
+      
+
+    </div>
+
+    
+</body>
+
+
+
+    <script>
+
+        $('#email' ).on({
+            'focus' : function () {
+
+            $('#email').css({
+                
+                "background-color" : "grey",
+                "padding" : "10px",
+                "color" : "white",
+
+                })
+
+            },
+
+            'blur' :  function () {
+
+                $('#email').css ({
+
+                    "background-color" : "green",
+
+                })
+
+            }
+
+
+        })
+
+        $('#pwd' ).on({
+            'focus' : function () {
+
+            $('#pwd').css({
+                
+                "background-color" : "grey",
+                "padding" : "10px",
+                "color" : "white",
+
+                })
+
+            },
+
+            'blur' :  function () {
+
+                $('#pwd').css ({
+
+                    "background-color" : "green",
+
+                })
+
+            }
+
+
+        })
+
+
+
+        // //   start  Button -> submit
+
+        //   $('#submit').on ('click' , function () {
+
+        //     alert ('The data was successfully sent');
+
+        // })
+        // //   End  Button -> submit
+
+        // // start Button -> reset
+
+        // $('#reset').on ('click' , function () {
+
+        // alert (' successfully reset');
+
+        // })
+
+        // // End  Button -> reset
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
